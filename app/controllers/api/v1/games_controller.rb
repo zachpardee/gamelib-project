@@ -4,6 +4,16 @@ class Api::V1::GamesController < ApplicationController
       @games = Game.all
       render json: @games
     end
+
+    def create
+        @game = Game.create(game_params) 
+        render json: @game
+    end
+
+    def show
+        @game = Game.find(params[:id]);
+        render json: @game
+    end
    
     def update
       @game.update(game_params)
@@ -13,11 +23,16 @@ class Api::V1::GamesController < ApplicationController
         render json: { errors: @game.errors.full_messages }, status: :unprocessible_entity
       end
     end
+
+    def destroy
+        @game = Game.find(params[:id]);
+        @game.destroy
+    end
    
     private
    
     def game_params
-      params.permit(:title, :content)
+      params.permit(:title, :content, :rating, :image_url, :downloads)
     end
    
     def find_game

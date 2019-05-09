@@ -43,7 +43,7 @@ Game.create(
     downloads: 0)
 
 Game.create(
-    title: 'Astroids',
+    title: 'Asteroids',
     content: 'This games is old af',
     rating: "7/10",
     image_url: "http://www.geek.com/wp-content/uploads/2009/07/asteroids.jpg",
