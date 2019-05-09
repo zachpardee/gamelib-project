@@ -48,3 +48,31 @@ Game.create(
     rating: "7/10",
     image_url: "http://www.geek.com/wp-content/uploads/2009/07/asteroids.jpg",
     downloads: 0)
+
+Game.create(
+    title: 'Rust',
+    content: 'This is a pretty cool survival game',
+    rating: "8/10",
+    image_url: "https://i.pinimg.com/originals/a4/0a/65/a40a65fe3d7e98928083b526a0331329.jpg",
+    downloads: 8000000)
+
+Game.create(
+    title: 'Call of Duty: Black Ops 4',
+    content: 'Run around aimlessly and shoot other people',
+    rating: "7/10",
+    image_url: "https://cdn.images.express.co.uk/img/dynamic/143/590x/Black-Ops-4-1029828.jpg?r=1539243619586",
+    downloads: 20000000)
+    
+Game.create(
+    title: 'Dota 2',
+    content: 'This is a MOBA that Ive never played',
+    rating: "7/10",
+    image_url: "https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1557267263",
+    downloads: 150000000)
+    
+Game.create(
+    title: 'League of Legends',
+    content: 'This is also a MOBA that Ive never played',
+    rating: "6/10",
+    image_url: "https://tribwgnam.files.wordpress.com/2019/03/1a.jpg?quality=85&strip=all&w=400&h=225&crop=1",
+    downloads: 150000000)
